@@ -1,0 +1,5 @@
+Flask~=3.0.3
+pyodbc~=5.2.0
+cryptography
+flasgger~=0.9.7.1
+PyJWT~=2.9.0
