@@ -35,16 +35,16 @@ The Trail Management Service is a Flask-based RESTful API that allows users to m
 git clone https://github.com/ChinazamAzubuike/COMP2001-Trail-Service.git
 cd trail-management-service
 **2.** Set Up Environment
-1.	Install dependencies: pip install -r requirements.txt
+Install dependencies: pip install -r requirements.txt
 **3.** Configure Database
-1.	Update the pyodbc.connect line in app.py with your database credentials: 
-2.	conn = pyodbc.connect(
-3.	    'DRIVER={ODBC Driver 17 for SQL Server};'
-4.	    'SERVER=your-server-name;'
-5.	    'DATABASE=your-database-name;'
-6.	    'UID=your-username;'
-7.	    'PWD=your-password;'
-8.	)
+Update the pyodbc.connect line in app.py with your database credentials: 
+1.	conn = pyodbc.connect(
+2.	    'DRIVER={ODBC Driver 17 for SQL Server};'
+3.	    'SERVER=your-server-name;'
+4.	    'DATABASE=your-database-name;'
+5.	    'UID=your-username;'
+6.	    'PWD=your-password;'
+7.	)
 **4.** Run the Application
 python app.py
 Access the API at: http://127.0.0.1:5000/
@@ -59,13 +59,13 @@ Access the API at: http://127.0.0.1:8000/
 **API Endpoints**
 •Authentication:
  - POST /login: Login and retrieve a JWT token.
-•Trails
+   •Trails
  - POST /trails: Create a new trail (Admin only).
  - GET /trails: Retrieve all trails.
  - GET /trails/<trail_id>: Retrieve a specific trail by ID.
  - PUT /trails/<trail_id>: Update a trail (Admin only).
  - DELETE /trails/<trail_id>: Delete a trail (Admin only).
-•Users
+   •Users
  - POST /users: Create a new user.
  - GET /users: Retrieve all users.
  - GET /users/<user_id>: Retrieve a specific user by ID.
